@@ -74,10 +74,10 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none                        &kp PLUS     &kp MINUS      &kp STAR         &kp KP_DIVIDE                 &kp AT      &kp PERCENT
+&none  &none  &none  &none  &none  &none                        &kp PLUS     &kp MINUS      &kp STAR         &kp KP_DIVIDE            &kp PERCENT        &kp CLEAR
 &none  &none  &none  &none  &none  &none                    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS       &kp DOLLAR
 &none  &none  &none  &none  &none  &none                    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp POUND
-&none  &none  &none  &none  &none  &none  &none      &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_0                &kp DOT  &kp EXCLAMATION
+&none  &none  &none  &none  &none  &none  &none   &kp BSPC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_0                &kp DOT  &kp EXCLAMATION
                      &none  &none  &none  &none  &kp ENTER  &kp NUMBER_0       &kp DOT         &to 0
             >;
         };
