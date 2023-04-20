@@ -90,5 +90,17 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
+
+        delete_all: delete_all {
+            label = "select and delete";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp BSPC>
+                ;
+        };
     };
 };
