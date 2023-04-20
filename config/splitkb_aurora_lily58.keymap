@@ -74,7 +74,7 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                         &kp PLUS     &kp MINUS      &kp STAR         &kp KP_DIVIDE            &kp PERCENT  &mt CLEAR LC(A)
+&trans  &trans  &trans  &trans  &trans  &trans                         &kp PLUS     &kp MINUS      &kp STAR         &kp KP_DIVIDE            &kp PERCENT  &mt BSPC LC(A)
 &trans  &trans  &trans  &trans  &trans  &trans                     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS       &kp DOLLAR
 &trans  &trans  &trans  &trans  &trans  &trans                     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp POUND
 &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp BSPC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp NUMBER_0                &kp DOT  &kp EXCLAMATION
