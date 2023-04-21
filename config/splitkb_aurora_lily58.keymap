@@ -24,8 +24,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
-                <&inc_dec_kp  undefined>;
+                <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         lower_layer {
