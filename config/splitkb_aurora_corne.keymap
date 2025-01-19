@@ -63,7 +63,7 @@
 &kp ESCAPE        &kp Q  &kp W  &kp E     &kp R    &terminal_tp           &kp Y      &kp U    &kp I         &kp O    &kp P     &kp BACKSPACE
 &kp LEFT_CONTROL  &kp A  &kp S  &kp D     &kp F    &kp G                  &kp H      &kp J    &kp K         &kp L    &kp SEMI  &kp SINGLE_QUOTE
 &kp LSHFT         &kp Z  &kp X  &kp C     &kp V    &kp B                  &kp N      &kp M    &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LGUI  &mo_1_3  &hold_tap TAB SPACE    &kp ENTER  &mo_2_4  &kp LEFT_ALT
+                                &kp LGUI  &mo_1_3  &hold_tap SPACE TAB    &kp ENTER  &mo_2_4  &kp LEFT_ALT
             >;
         };
 
@@ -79,7 +79,7 @@
         nav {
             bindings = <
 &trans  &trans     &trans  &trans  &trans         &trans    &hold_tap PAGE_UP LS(LA(PAGE_UP))      &hold_tap HOME LS(LA(HOME))        &hold_tap UP LS(LA(UP))      &hold_tap END LS(LA(END))      &trans  &trans
-&trans  &trans     &trans  &trans  &kp K_REFRESH  &trans    &hold_tap PAGE_DOWN LS(LA(PAGE_DOWN))  &hold_tap LEFT_ARROW LS(LA(LEFT))  &hold_tap DOWN LS(LA(DOWN))  &hold_tap RIGHT LS(LA(RIGHT))  &trans  &trans
+&trans  &trans     &trans  &trans  &kp K_REFRESH  &trans    &hold_tap PAGE_DOWN LS(LA(PAGE_DOWN))  &hold_tap LEFT LS(LA(LEFT))    &hold_tap DOWN LS(LA(DOWN))    &hold_tap RIGHT LS(LA(RIGHT))   &trans  &trans
 &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans         &trans    &trans                                 &trans                             &trans                       &trans                         &trans  &trans
                            &trans  &trans         &trans    &trans                                 &trans                             &trans
             >;
