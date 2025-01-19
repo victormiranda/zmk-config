@@ -12,6 +12,14 @@
 / {
     behaviors {
 
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+        };
+
+
         mo_1_3: mo_1_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "MO_1_3";
@@ -50,7 +58,7 @@
 
         num-and-symbols {
             bindings = <
-&kp ESCAPE  &kp N1         &kp N2           &kp N3    &kp N4      &kp N5         &kp N6     &kp N7     &kp N8         &kp N9            &kp N0         &trans
+&gresc  &kp N1         &kp N2           &kp N3    &kp N4      &kp N5         &kp N6     &kp N7     &kp N8         &kp N9            &kp N0         &trans
 &trans  &kp EXCL       &kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT    &kp MINUS  &kp EQUAL  &kp LS(PLUS)   &kp LBKT          &kp RBKT       &kp UNDER
 &trans  &kp AMPERSAND  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR    &kp PIPE       &kp LBRC   &kp RBRC   &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &trans
                                         &trans    &trans      &trans         &trans     &trans     &trans
@@ -59,7 +67,7 @@
 
         nav {
             bindings = <
-&kp ESCAPE  &trans     &trans  &trans  &trans         &trans    &hold_tap PAGE_UP LS(LA(PAGE_UP))      &hold_tap HOME LS(LA(HOME))        &hold_tap UP LS(LA(UP))      &hold_tap END LS(LA(END))      &trans  &trans
+&gresc  &trans     &trans  &trans  &trans         &trans    &hold_tap PAGE_UP LS(LA(PAGE_UP))      &hold_tap HOME LS(LA(HOME))        &hold_tap UP LS(LA(UP))      &hold_tap END LS(LA(END))      &trans  &trans
 &trans  &trans     &trans  &trans  &kp K_REFRESH  &trans    &hold_tap PAGE_DOWN LS(LA(PAGE_DOWN))  &hold_tap LEFT LS(LA(LEFT))    &hold_tap DOWN LS(LA(DOWN))    &hold_tap RIGHT LS(LA(RIGHT))   &trans  &trans
 &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans         &trans    &trans                                 &trans                             &trans                       &trans                         &trans  &trans
                            &trans  &trans         &trans    &trans                                 &trans                             &trans
@@ -68,7 +76,7 @@
 
         media {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&gresc  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
