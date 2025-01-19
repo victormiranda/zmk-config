@@ -34,15 +34,9 @@
             bindings = <&mo 2>, <&mo 4>;
         };
 
-        hold_tap: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
+    
     };
+\
 
     keymap {
         compatible = "zmk,keymap";
@@ -67,8 +61,8 @@
 
         nav {
             bindings = <
-&gresc  &trans     &trans  &trans  &trans         &trans    &hold_tap PAGE_UP LS(LA(PAGE_UP))      &hold_tap HOME LS(LA(HOME))        &hold_tap UP LS(LA(UP))      &hold_tap END LS(LA(END))      &trans  &trans
-&trans  &trans     &trans  &trans  &kp K_REFRESH  &trans    &hold_tap PAGE_DOWN LS(LA(PAGE_DOWN))  &hold_tap LEFT LS(LA(LEFT))    &hold_tap DOWN LS(LA(DOWN))    &hold_tap RIGHT LS(LA(RIGHT))   &trans  &trans
+&gresc  &trans     &trans  &trans  &trans         &trans    &kp PAGE_UP      &kp HOME        &kp UP       &kp END      &trans  &trans
+&trans  &trans     &trans  &trans  &kp K_REFRESH  &trans    &kp PAGE_DOWN  &kp LEFT    &kp DOWN     &kp RIGHT   &trans  &trans
 &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans         &trans    &trans                                 &trans                             &trans                       &trans                         &trans  &trans
                            &trans  &trans         &trans    &trans                                 &trans                             &trans
             >;
