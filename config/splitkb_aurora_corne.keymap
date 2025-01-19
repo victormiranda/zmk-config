@@ -53,8 +53,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
         };
-
-      
     };
 
     keymap {
@@ -80,10 +78,10 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans         &trans    &hold_tap PAGE_UP LS(LA(PAGE_UP))     &hold_tap HOME LS(LA(HOME))       &hold_tap UP LS(LA(UP))      &hold_tap END LS(LA(END))                         &trans  &trans
-&trans  &trans  &trans  &trans  &kp K_REFRESH  &trans    &hold_tap PAGE_DOWN LS(LA(PAGE_DOWN))  &hold_tap LEFT_ARROW LS(LA(LEFT))  &hold_tap DOWN LS(LA(DOWN))  &hold_tap RIGHT LS(LA(RIGHT))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans    &trans         &trans                            &trans                       &trans                         &trans  &trans
-                        &trans  &trans         &trans    &trans         &trans                            &trans
+&trans  &trans     &trans  &trans  &trans         &trans    &hold_tap PAGE_UP LS(LA(PAGE_UP))      &hold_tap HOME LS(LA(HOME))        &hold_tap UP LS(LA(UP))      &hold_tap END LS(LA(END))      &trans  &trans
+&trans  &trans     &trans  &trans  &kp K_REFRESH  &trans    &hold_tap PAGE_DOWN LS(LA(PAGE_DOWN))  &hold_tap LEFT_ARROW LS(LA(LEFT))  &hold_tap DOWN LS(LA(DOWN))  &hold_tap RIGHT LS(LA(RIGHT))  &trans  &trans
+&trans  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans         &trans    &trans                                 &trans                             &trans                       &trans                         &trans  &trans
+                           &trans  &trans         &trans    &trans                                 &trans                             &trans
             >;
         };
 
