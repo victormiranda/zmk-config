@@ -53,6 +53,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
         };
+
+      
     };
 
     keymap {
@@ -69,19 +71,19 @@
 
         num-and-symbols {
             bindings = <
-&trans  &kp N1         &kp N2           &kp N3    &kp N4      &kp N5         &kp N6     &kp N7     &kp N8        &kp N9    &kp N0    &trans
-&trans  &kp EXCL       &kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT    &kp MINUS  &kp EQUAL  &kp LS(PLUS)  &kp LBKT  &kp RBKT  &kp UNDER
-&trans  &kp AMPERSAND  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR    &kp PIPE       &kp LBRC   &kp RBRC   &kp LESS_THAN &kp GREATER_THAN   &kp BACKSLASH     &trans
+&trans  &kp N1         &kp N2           &kp N3    &kp N4      &kp N5         &kp N6     &kp N7     &kp N8         &kp N9            &kp N0         &trans
+&trans  &kp EXCL       &kp AT_SIGN      &kp HASH  &kp DOLLAR  &kp PERCENT    &kp MINUS  &kp EQUAL  &kp LS(PLUS)   &kp LBKT          &kp RBKT       &kp UNDER
+&trans  &kp AMPERSAND  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR    &kp PIPE       &kp LBRC   &kp RBRC   &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH  &trans
                                         &trans    &trans      &trans         &trans     &trans     &trans
             >;
         };
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans         &trans    &kp PAGE_UP    &kp HOME        &kp UP_ARROW  &kp END    &trans  &trans
-&trans  &trans  &trans  &trans  &kp K_REFRESH  &trans    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans         &trans    &trans         &trans          &trans        &trans     &trans  &trans
-                        &trans  &trans         &trans    &trans         &trans          &trans
+&trans  &trans  &trans  &trans  &trans         &trans    &hold_tap PAGE_UP LS(LA(PAGE_UP))     &hold_tap HOME LS(LA(HOME))       &hold_tap UP LS(LA(UP))      &hold_tap END LS(LA(END))                         &trans  &trans
+&trans  &trans  &trans  &trans  &kp K_REFRESH  &trans    &hold_tap PAGE_DOWN LS(LA(PAGE_DOWN))  &hold_tap LEFT_ARROW LS(LA(LEFT))  &hold_tap DOWN LS(LA(DOWN))  &hold_tap RIGHT LS(LA(RIGHT))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans         &trans    &trans         &trans                            &trans                       &trans                         &trans  &trans
+                        &trans  &trans         &trans    &trans         &trans                            &trans
             >;
         };
 
